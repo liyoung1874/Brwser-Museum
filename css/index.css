@@ -1,0 +1,64 @@
+.pepper-nav {
+    margin-bottom: 0px;
+    border-radius: 0;
+}
+
+.pepper-p {
+    height: 50px;
+}
+
+.pepper-item {
+    max-height: 500px;
+}
+
+.pepper-item>img {
+    width: 100%;
+}
+
+.pepper-item h3 {
+    font-size: 36px;
+}
+
+.pepper-item p,
+.pepper-item button {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.pepper-container {
+    margin-top: 50px;
+}
+
+.pepper-hr {
+    margin: 50px 0;
+}
+
+.pepper-column-center {
+    padding-top: 7%;
+}
+
+.pepper-tab h3 {
+    opacity: .5;
+}
+
+.pepper-tab img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .pepper-item h3 {
+        font-size: 26px;
+    }
+
+    .pepper-item p,
+    .pepper-item button {
+        font-size: 18px;
+        margin-bottom: 1%;
+    }
+
+    .pepper-tab img {
+        width: 250px;
+    }
+}

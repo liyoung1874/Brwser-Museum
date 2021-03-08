@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>现代浏览器博物馆</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <!-- 
+        此网页是对bootstrap学习的应用，所以完全基于bootstrap v3.3.7
+        学习者：吃啥都爱蘸辣椒
+     -->
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar pepper-nav navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">现代浏览器博物馆</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">综述 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="javascript:;">简述</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">特点 <span class="caret"></span></a>
+                        <ul id="distinction" class="dropdown-menu">
+                            <li><a href="#chrome">Chrome</a></li>
+                            <li><a href="#firefox">Firefox</a></li>
+                            <li><a href="#safari">Safari</a></li>
+                            <li><a href="#opera">Opera</a></li>
+                            <li><a href="#ie">IE</a></li>
+                        </ul>
+                    <li>
+                        <a href="javascript:;" type="button" data-toggle="modal" data-target="#myModal">
+                            关于</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+
+        <!-- 导航点 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner pepper-carousel" role="listbox">
+            <div class="item pepper-item active">
+                <img src="./img/chrome-big.jpg">
+                <div class="carousel-caption">
+                    <h3>Chrome</h3>
+                    <p>Google Chrome是由Google开发的网页浏览器。</p>
+                    <p>
+                        <a href="http://www.google.cn/chrome/browser/desktop/index.html" type="button" class="btn btn-primary">点我下载</a>
+                    </p>
+                    </div>
+            </div>
+
+            <div class="item pepper-item">
+                <img src="./img/firefox-big.jpg">
+                <div class="carousel-caption">
+                    <h3>Firefox</h3>
+                    <p>Mozilla Firefox（简称Firefox），中文俗称火狐，是一个自由及开源的网页浏览器。</p>
+                    <p>
+                        <a href="https://www.mozilla.org/zh-CN/firefox/new/" type="button" class="btn btn-primary">点我下载</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item pepper-item">
+                <img src="./img/safari-big.jpg">
+                <div class="carousel-caption">
+                    <h3>Safari</h3>
+                    <p>Safari是苹果公司所开发，并自带于OS X的网页浏览器。</p>
+                    <p>
+                        <a href="http://www.apple.com/cn/safari/" type="button" class="btn btn-primary">点我下载</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item pepper-item">
+                <img src="./img/opera-big.jpg">
+                <div class="carousel-caption">
+                    <h3>Opera</h3>
+                    <p>Opera是由Opera软件公司所开发的网页浏览器。</p>
+                    <p>
+                        <a href="http://www.opera.com/zh-cn" type="button" class="btn btn-primary">点我下载</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="item pepper-item">
+                <img src="./img/ie-big.jpg">
+                <div class="carousel-caption">
+                    <h3>IE</h3>
+                    <p>Internet Explorer（简称IE或MSIE），是微软所开发的一系列图形用户界面网页浏览器。</p>
+                    <p>
+                        <a href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie" type="button" class="btn btn-primary">点我下载</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- 三列布局(运用栅格系统) -->
+    <div class="container">
+        <div class="container-fluid pepper-container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="./img/chrome-logo-small.png">
+                    <div class="caption">
+                        <h3>Chrome</h3>
+                        <p class="pepper-p">Chrome是由Google开发的网页浏览器。</p>
+                        <p><a href="http://www.google.cn/chrome/browser/desktop/index.html" class="btn btn-default" role="button">点我下载</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4"><img src="./img/firefox-logo-small.png">
+                    <div class="caption">
+                        <h3>Firefox</h3>
+                        <p class="pepper-p">Firefox（简称Firefox），中文俗称火狐，是一个自由及开源的网页浏览器。</p>
+                        <p><a href="https://www.mozilla.org/zh-CN/firefox/new/" class="btn btn-default" role="button">点我下载</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="./img/safari-logo-small.png">
+                    <div class="caption">
+                        <h3>Safari</h3>
+                        <p class="pepper-p">Safari是苹果公司所开发，并自带于OS</p>
+                        <p><a href="http://www.apple.com/cn/safari/" class="btn btn-default" role="button">点我下载</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 分割线 -->
+    <div class="pepper-hr">
+        <hr />
+    </div>
+
+    <!-- 标签栏 -->
+    <div class="container">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist" id="pepper-nav-list">
+
+            <li role="presentation" class="active">
+                <a href="#chrome" aria-controls="chrome" role="tab" data-toggle="tab">Chrome</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#firefox" aria-controls="firefx" role="tab" data-toggle="tab">Firefox</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#safari" aria-controls="safari" role="tab" data-toggle="tab">Safari</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#opera" aria-controls="opera" role="tab" data-toggle="tab">Opera</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#ie" aria-controls="ie" role="tab" data-toggle="tab">IE</a>
+            </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content pepper-tab">
+
+            <div role="tabpanel" class="tab-pane active" id="chrome">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="pepper-column-center col-md-7">
+                            <h2>Google Chrome</h2>
+                            <h3>浏览速度更快</h3>
+                            <p class="lead">Google Chrome是由Google开发的网页浏览器。
+                                中文名曾短暂用过“铬浏览器”，后期中文名使用“酷容浏览器”。
+                                相应的开源计划名为Chromium，其采用BSD许可证授权并开放源代码，但Google Chrome本身是非自由软件，因此未开放源代码。
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./img/chrome-logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="firefox">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./img/firefox-logo.png">
+                        </div>
+                        <div class="pepper-column-center col-md-7">
+                            <h2>Mozilla Firefox</h2>
+                            <h3>尽情地上网浏览</h3>
+                            <p class="lead">Mozilla
+                                Firefox（简称Firefox），中文俗称火狐，是一个自由及开源的网页浏览器，由Mozilla基金会及其子公司Mozilla公司开发。
+                                Firefox支持Windows、OS X及Linux，其移动版支持Android及Firefox OS，这些版本的Firefox使用Gecko来排版网页。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="safari">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="pepper-column-center col-md-7">
+                            <h2>Safari</h2>
+                            <h3>更智能，更强大</h3>
+                            <p class="lead">Safari是苹果公司所开发，并自带于OS X的网页浏览器。
+                                Safari在2003年1月7日首度发行测试版，并从Mac OS X v10.3开始成为OS X的默认浏览器，也是iOS自带的默认浏览器。
+                                Safari使用苹果自家的WebKit来进行网页排版及运行JavaScript。
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./img/safari-logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="opera">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./img/opera-logo.png">
+                        </div>
+                        <div class="pepper-column-center col-md-7">
+                            <h2>Opera</h2>
+                            <h3>快速又安全</h3>
+                            <p class="lead">Opera是由Opera软件公司所开发的网页浏览器。
+                                最新版本可用于Microsoft Windows、OS X和Linux操作系统，并使用Blink排版引擎。
+                                而早期版本则使用Presto排版引擎。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="ie">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="pepper-column-center col-md-7">
+                            <h2>IE</h2>
+                            <h3>逐渐走入历史</h3>
+                            <p class="lead">
+                                Internet Explorer（旧称Microsoft Internet Explorer和Windows Internet Explorer，简称IE或MSIE），
+                                是微软所开发的一系列图形用户界面网页浏览器。
+                                自从1995年开始，自带在各个新版本的Windows作业系统作为默认浏览器，也是微软Windows操作系统的一个组成部分。
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="./img/ie-logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 分割线 -->
+    <div class="pepper-hr">
+        <hr />
+    </div>
+
+    <!-- 底部的版权标识和回到顶部按钮 -->
+    <div class="container">
+        <p class="pull-left">
+            &copy; &nbsp; 2020 &nbsp; 现代浏览器博物馆
+        </p>
+
+        <p class="pull-right">
+            <a href="#">回到顶部</a>
+        </p>
+    </div>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>欢迎来到Pepper制作的现代浏览器博物馆&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">谢谢</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
